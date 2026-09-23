@@ -1,42 +1,449 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
+
 <head>
+    <meta charset="UTF-8">
 
+    <!-- Gør hjemmesiden tilpasset mobil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Chanmeet Singh | Portfolio</title>
+    <meta name="description"
+        content="Chanmeet Singh's portfolio med projekter inden for programmering, webudvikling og spiludvikling.">
+    <meta name="author" content="Chanmeet Singh">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="web.css">
-
-    <title>My Simple Website</title>
 </head>
+
 <body>
 
+    <!-- Navigation -->
     <header>
-        <h1>Welcome to My Website</h1>
+        <nav class="navbar">
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <h2 class="logo">Chanmeet<span>.</span></h2>
+
+            <div class="nav-links">
+                <a href="#home">Forside</a>
+                <a href="#about">Om mig</a>
+                <a href="#projects">Projekter</a>
+                <a href="#skills">Kompetencer</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+
         </nav>
     </header>
 
-    <main>
 
-        <section>
-            <h2>About Me</h2>
-            <p>I'm a web developer passionate about creating amazing websites.</p>
-        </section>
+    <!-- FORSIDE -->
+    <section id="home" class="hero">
 
-        <section>
-            <h2>Contact</h2>
-            <p>You can reach me at example@example.com</p>
-        </section>
+        <div class="hero-text">
 
-    </main>
+            <p class="small-title">
+                PORTFOLIO · PROGRAMMERING · TEKNOLOGI
+            </p>
 
+            <h1>
+                Hej, jeg er
+                <span>Chanmeet.</span>
+            </h1>
+
+            <p>
+                Jeg er HTX-elev med interesse for programmering,
+                webudvikling, spiludvikling og teknologi.
+                På denne hjemmeside viser jeg nogle af de projekter,
+                jeg har arbejdet med.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#projects" class="button">
+                    Se mine projekter
+                </a>
+
+                <a href="#contact" class="button second-button">
+                    Kontakt mig
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Lille kodeboks -->
+        <div class="code-box">
+
+            <div class="code-top">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <pre>
+class Developer:
+
+    name = "Chanmeet"
+
+    interests = [
+        "Python",
+        "Web",
+        "Games"
+    ]
+
+    def create(self):
+        return "new ideas"
+            </pre>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OM MIG -->
+    <section id="about" class="section">
+
+        <p class="small-title">01 · OM MIG</p>
+
+        <h2>Jeg lærer ved at bygge ting.</h2>
+
+        <div class="about-container">
+
+            <div>
+
+                <p>
+                    Jeg går på HTX og arbejder med programmering,
+                    teknologi og design gennem forskellige
+                    skoleprojekter.
+                </p>
+
+                <p>
+                    Jeg synes især, det er spændende at gå fra
+                    en idé til et færdigt produkt, hvor både
+                    funktionalitet og design skal fungere.
+                </p>
+
+                <p>
+                    Mine projekter spænder blandt andet fra
+                    Python-programmer og spil til webudvikling,
+                    produktdesign og Unreal Engine.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <div>
+                    <strong>Uddannelse</strong>
+                    <span>HTX</span>
+                </div>
+
+                <div>
+                    <strong>Interesser</strong>
+                    <span>Programmering · Web · Spil</span>
+                </div>
+
+                <div>
+                    <strong>Teknologier</strong>
+                    <span>Python · HTML · CSS</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PROJEKTER -->
+    <section id="projects" class="section">
+
+        <p class="small-title">02 · PROJEKTER</p>
+
+        <h2>Mine projekter</h2>
+
+        <p class="section-description">
+            Her er nogle af de projekter, jeg har arbejdet med
+            gennem min uddannelse.
+        </p>
+
+
+        <div class="project-container">
+
+
+            <!-- Projekt 1 -->
+            <article class="project">
+
+                <p class="project-number">01</p>
+
+                <p class="project-type">
+                    PYTHON · STREAMLIT
+                </p>
+
+                <h3>Vigenère Kryptering</h3>
+
+                <p>
+                    En webapp lavet i Python og Streamlit,
+                    som kan kryptere og dekryptere tekst ved
+                    hjælp af Vigenère-kryptering.
+                </p>
+
+                <a href="#">
+                    Se projekt →
+                </a>
+
+            </article>
+
+
+            <!-- Projekt 2 -->
+            <article class="project featured">
+
+                <p class="project-number">02</p>
+
+                <p class="project-type">
+                    PYTHON · PYGAME
+                </p>
+
+                <h3>Fish Game</h3>
+
+                <p>
+                    Et Pygame-projekt med fisk, bobler,
+                    bevægelse og hastighedskontrol.
+                    Projektet bruger objektorienteret programmering.
+                </p>
+
+                <a href="#">
+                    Se projekt →
+                </a>
+
+            </article>
+
+
+            <!-- Projekt 3 -->
+            <article class="project">
+
+                <p class="project-number">03</p>
+
+                <p class="project-type">
+                    UNREAL ENGINE · BLUEPRINTS
+                </p>
+
+                <h3>Game Development</h3>
+
+                <p>
+                    Et spilprojekt hvor jeg har arbejdet med
+                    levels, Blueprints, input, materials,
+                    lighting og UI.
+                </p>
+
+                <a href="#">
+                    Se projekt →
+                </a>
+
+            </article>
+
+
+            <!-- Projekt 4 -->
+            <article class="project">
+
+                <p class="project-number">04</p>
+
+                <p class="project-type">
+                    HTML · CSS
+                </p>
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Denne hjemmeside er udviklet som en personlig
+                    portfolio med fokus på brugervenlighed,
+                    design og SEO.
+                </p>
+
+                <a href="#">
+                    Se projekt →
+                </a>
+
+            </article>
+
+
+            <!-- Projekt 5 -->
+            <article class="project">
+
+                <p class="project-number">05</p>
+
+                <p class="project-type">
+                    TEKNOLOGI · PRODUKTDESIGN
+                </p>
+
+                <h3>Wallcharger</h3>
+
+                <p>
+                    Et produktdesign for en transportabel
+                    trådløs oplader med fokus på funktion,
+                    brugervenlighed og bæredygtighed.
+                </p>
+
+                <a href="#">
+                    Se projekt →
+                </a>
+
+            </article>
+
+
+            <!-- Projekt 6 -->
+            <article class="project">
+
+                <p class="project-number">06</p>
+
+                <p class="project-type">
+                    APP · HTML/CSS
+                </p>
+
+                <h3>Studieretnings-app</h3>
+
+                <p>
+                    En app-idé til kommende gymnasieelever,
+                    hvor brugeren kan undersøge forskellige
+                    studieretninger.
+                </p>
+
+                <a href="#">
+                    Se projekt →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- KOMPETENCER -->
+    <section id="skills" class="section">
+
+        <p class="small-title">03 · KOMPETENCER</p>
+
+        <h2>Mine teknologier</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <div class="skill-title">
+                    <span>Python</span>
+                    <span>God erfaring</span>
+                </div>
+
+                <div class="bar">
+                    <div class="progress python"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <div class="skill-title">
+                    <span>HTML & CSS</span>
+                    <span>God erfaring</span>
+                </div>
+
+                <div class="bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <div class="skill-title">
+                    <span>Game Development</span>
+                    <span>Under udvikling</span>
+                </div>
+
+                <div class="bar">
+                    <div class="progress game"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <div class="skill-title">
+                    <span>GitHub</span>
+                    <span>Grundlæggende</span>
+                </div>
+
+                <div class="bar">
+                    <div class="progress github"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="tags">
+
+            <span>Python</span>
+            <span>Pygame</span>
+            <span>Streamlit</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>GitHub</span>
+            <span>Unreal Engine</span>
+            <span>Blueprints</span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- KONTAKT -->
+    <section id="contact" class="section">
+
+        <div class="contact-box">
+
+            <div>
+
+                <p class="small-title">04 · KONTAKT</p>
+
+                <h2>Har du et projekt i tankerne?</h2>
+
+                <p>
+                    Du kan kontakte mig, hvis du vil høre mere
+                    om mine projekter eller mine kompetencer.
+                </p>
+
+            </div>
+
+            <a
+                href="mailto:dinmail@example.com"
+                class="button">
+                Kontakt mig
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2023 My Simple Website. All rights reserved.</p>
+
+        <p>
+            © 2026 Chanmeet Singh
+        </p>
+
+        <a href="#home">
+            Til toppen ↑
+        </a>
+
     </footer>
 
 </body>
+
 </html>
